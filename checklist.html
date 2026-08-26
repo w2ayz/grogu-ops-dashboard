@@ -99,9 +99,9 @@
     <div class="summary-item"><div class="summary-num neutral">10</div><div class="summary-lbl">Tailscale Peers</div></div>
   </div>
 
-  <div class="notice" id="notice-box" style="background:rgba(110,232,122,0.05);border:1px solid rgba(110,232,122,0.2);">
-    <div class="notice-head" id="notice-head" style="color:var(--ok)">✓ Core Services Nominal — Aug 19, 2026</div>
-    <span id="notice-body">Gateway and RealTimeTalk both confirmed live after today's RTT pull to v3.17.0. Hourly health monitor now active via openclaw-ops-monitor skill — alerts to #alerts on failure.</span>
+  <div class="notice" id="notice-box" style="background:rgba(0,230,118,0.05);border:1px solid rgba(0,230,118,0.2);">
+    <div class="notice-head" id="notice-head" style="color:var(--ok)">✓ All Systems Nominal — Aug 26, 2026</div>
+    <span id="notice-body">All monitored services passed the last health check.</span>
     <span class="fix-cmd" style="color:var(--err)">Note: WeChat CE Patch has no LaunchAgent installed on this machine — see Quick Fix Reference to bring it over from the sibling box.</span>
   </div>
 
@@ -122,7 +122,7 @@
       </tr>
       <tr>
         <td class="svc-name">RealTimeTalk Daemon</td>
-        <td class="svc-id">ai.openclaw.realtimetalk · :19000 · v3.17.0</td>
+        <td class="svc-id">ai.openclaw.realtimetalk · :19000 · <span id="rtt-version">v3.17.0</span></td>
         <td class="svc-check">
           <div class="step-list">
             <div class="step"><span class="step-num">1.</span><span><code>curl localhost:19000/status</code> → <code>"status":"running"</code></span></div>
